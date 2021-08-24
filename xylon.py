@@ -95,7 +95,7 @@ async def pingall(ctx):
                 try:
                     await chan.send(f"@everyone {message}")
                 except:
-                    print("Nigga, are there even channels and/or available permissions to ping everyone?")
+                    print("Are there even channels and/or available permissions to ping everyone?")
 
 @bot.command()
 async def newrole(ctx):
@@ -107,7 +107,7 @@ async def newrole(ctx):
             try:
                 await guild.create_role(name=role,color=discord.Color.gold())
             except:
-                print("nigga i cant do shit")
+                print("I cant do shit")
 
 @bot.command()
 async def channelcreate(ctx):
@@ -119,6 +119,6 @@ async def channelcreate(ctx):
             try:
                 await guild.create_text_channel(channels)
             except:
-                print("Nigga i cant do shit")
+                print("I cant do shit")
 
 bot.run(token)
